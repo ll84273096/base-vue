@@ -1,7 +1,7 @@
 {
-  "name": "base-vue",
+  "name": "base-light-app",
   "version": "1.0.0",
-  "description": "A basic vue project",
+  "description": "A basic light app project",
   "author": "rock <63911056@qq.com>",
   "private": true,
   "scripts": {
@@ -10,8 +10,8 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "build": "node build/build.js && gulp"
   },
   "dependencies": {
     "vue": "^2.5.2",

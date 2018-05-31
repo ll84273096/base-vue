@@ -50,7 +50,12 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    // rock:将绝对路径转化为相对路径
+    assetsPublicPath: './',
+
+    // rock:添加main.xml的路径
+    // main.xml的path
+    mainPath: path.resolve(__dirname, '../main.xml'),
 
     /**
      * Source Maps
